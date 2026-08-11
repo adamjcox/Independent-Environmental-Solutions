@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<rect width="64" height="64" rx="13" fill="#17364A"/>
+<text x="32" y="27" text-anchor="middle" fill="#FFFFFF"
+      font-family="Georgia, 'Times New Roman', serif" font-size="28">I</text>
+<path d="M7 43 C16 41 20 34 27 36 C34 39 39 33 45 35 C51 36 55 40 59 39"
+      fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round"/>
+<path d="M20 48 C28 46 31 41 37 42 C44 43 49 47 60 46"
+      fill="none" stroke="#708A73" stroke-width="2.3" stroke-linecap="round"/>
+</svg>

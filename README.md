@@ -25,3 +25,12 @@ First coded Project Blue Ridge homepage prototype.
 
 ## Photography
 Photographer/source credits are included in the page. Keep the original source and license records in the Project Blue Ridge photography archive before production launch.
+
+
+## Homepage v1.1
+- Installed refined IES two-ridgeline production logo in header and footer.
+- Background Ridge Sage line begins behind the foreground ridge roughly one-third into the mark and extends beyond the foreground ridge.
+- Header “Request a Consultation” control is now IES Navy with white type.
+- Footer logo links smoothly back to `#top`.
+- Added Horizon-inspired favicon.
+- Image paths are flat (photographs sit alongside `index.html`) to match the current GitHub repository structure.
