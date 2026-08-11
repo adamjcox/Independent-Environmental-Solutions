@@ -36,9 +36,6 @@
 }
 
 /* Footer logo doubles as a quiet back-to-top control */
-.footer-logo img {
-    filter: brightness(0) invert(1);
-}
 .footer-logo{
   cursor:pointer;
   transition:opacity .18s ease, transform .18s ease;
