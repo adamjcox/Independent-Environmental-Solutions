@@ -16,7 +16,6 @@
 .footer-site-logo{
   width:200px;
   max-width:100%;
-  filter: brightness(0) invert(0);
 }
 
 /* Primary header action: deliberate visual hierarchy */
