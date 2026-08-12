@@ -48,9 +48,9 @@
 
 @media (max-width:960px){
   .site-logo{width:260px;max-width:62vw}
-  .footer-site-logo{width:270px;max-width:100%}
+  .footer-site-logo{width:220px;max-width:100%}
 }
 @media (max-width:650px){
   .site-logo{width:225px;max-width:68vw}
-  .footer-site-logo{width:245px;max-width:100%}
+  .footer-site-logo{width:220px;max-width:100%}
 }
