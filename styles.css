@@ -54,3 +54,292 @@
   .site-logo{width:225px;max-width:68vw}
   .footer-site-logo{width:220px;max-width:100%}
 }
+/* Request a Consultation — Client Intake v1.0 */
+
+.consultation-intro{
+  position:relative;
+  min-height:480px;
+  display:grid;
+  align-items:center;
+  color:#fff;
+  overflow:hidden;
+}
+
+.consultation-intro>img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.consultation-intro-content{
+  position:relative;
+  z-index:2;
+  padding:7rem 0;
+  max-width:820px;
+}
+
+.consultation-intro h2{
+  color:#fff;
+  max-width:760px;
+}
+
+.consultation-intro-content>p:last-child{
+  max-width:680px;
+  font-size:1.1rem;
+  color:rgba(255,255,255,.9);
+}
+
+.consultation-form-section{
+  background:var(--paper);
+  padding:7rem 0;
+}
+
+.consultation-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1.5fr) minmax(280px,.7fr);
+  gap:6rem;
+  align-items:start;
+}
+
+.consultation-form-wrap h2{
+  margin-bottom:.3em;
+}
+
+.consultation-lead{
+  color:var(--muted);
+  max-width:650px;
+  margin-bottom:2.5rem;
+}
+
+.ies-consultation-form{
+  display:grid;
+  gap:1.6rem;
+}
+
+.form-grid{
+  display:grid;
+  gap:1.2rem;
+}
+
+.form-grid.two{
+  grid-template-columns:repeat(2,1fr);
+}
+
+.form-field{
+  display:grid;
+  gap:.5rem;
+  border:0;
+  padding:0;
+  margin:0;
+  min-width:0;
+}
+
+.form-field label,
+.form-field legend{
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--navy);
+}
+
+.form-field > label > span{
+  color:var(--sage);
+}
+
+.form-field label small{
+  color:var(--muted);
+  font-weight:400;
+  margin-left:.3rem;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea{
+  width:100%;
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--charcoal);
+  font:inherit;
+  border-radius:10px;
+  padding:.9rem 1rem;
+  outline:none;
+  transition:border-color .18s ease, box-shadow .18s ease;
+}
+
+.form-field textarea{
+  resize:vertical;
+  min-height:160px;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus{
+  border-color:var(--sage);
+  box-shadow:0 0 0 3px rgba(112,138,115,.12);
+}
+
+.choice-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:.7rem;
+}
+
+.choice-grid label,
+.radio-row label{
+  display:flex;
+  align-items:center;
+  gap:.65rem;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:.8rem .9rem;
+  cursor:pointer;
+  font-weight:500;
+}
+
+.choice-grid input,
+.radio-row input{
+  width:auto;
+  margin:0;
+  accent-color:var(--navy);
+}
+
+.radio-row{
+  display:flex;
+  gap:.7rem;
+}
+
+.radio-row label{
+  min-width:120px;
+}
+
+.form-submit{
+  border:0;
+  cursor:pointer;
+  width:max-content;
+}
+
+.form-note{
+  margin:0;
+  font-size:.75rem;
+  color:var(--muted);
+}
+
+.consultation-next{
+  border-left:1px solid var(--line);
+  padding-left:2.5rem;
+}
+
+.next-step{
+  display:grid;
+  grid-template-columns:42px 1fr;
+  gap:1rem;
+  padding:1.4rem 0;
+  border-bottom:1px solid var(--line);
+}
+
+.next-step>span{
+  color:var(--sage);
+  font-size:.75rem;
+  font-weight:600;
+  letter-spacing:.08em;
+}
+
+.next-step h3{
+  font-size:1.35rem;
+  margin:0 0 .35rem;
+}
+
+.next-step p{
+  margin:0;
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+.direct-contact{
+  margin-top:2rem;
+  padding:1.3rem;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:12px;
+}
+
+.direct-contact p{
+  margin:0 0 .25rem;
+  font-size:.78rem;
+  color:var(--muted);
+}
+
+.direct-contact a{
+  color:var(--navy);
+  font-weight:600;
+  font-size:.88rem;
+  overflow-wrap:anywhere;
+}
+
+.consultation-message{
+  margin-top:2rem;
+  background:#fff;
+  border:1px solid var(--line);
+  border-left:4px solid var(--sage);
+  padding:1.5rem;
+  border-radius:10px;
+}
+
+.consultation-message h3{
+  margin-top:0;
+}
+
+.consultation-message p{
+  margin-bottom:0;
+}
+
+.consultation-message.error{
+  border-left-color:var(--navy);
+}
+
+@media (max-width:960px){
+  .consultation-layout{
+    grid-template-columns:1fr;
+    gap:4rem;
+  }
+
+  .consultation-next{
+    border-left:0;
+    border-top:1px solid var(--line);
+    padding-left:0;
+    padding-top:2.5rem;
+  }
+}
+
+@media (max-width:650px){
+  .consultation-intro{
+    min-height:440px;
+  }
+
+  .consultation-intro-content{
+    padding:5rem 0;
+  }
+
+  .consultation-form-section{
+    padding:4.5rem 0;
+  }
+
+  .form-grid.two,
+  .choice-grid{
+    grid-template-columns:1fr;
+  }
+
+  .radio-row{
+    flex-direction:column;
+  }
+
+  .radio-row label{
+    min-width:0;
+  }
+
+  .form-submit{
+    width:100%;
+  }
+}
