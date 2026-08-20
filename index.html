@@ -134,17 +134,200 @@
       </div>
     </section>
 
-    <section class="consultation" id="consultation">
-      <img src="jordan-lake-lawrence-melosantos.jpg" alt="Jordan Lake, North Carolina at sunset" />
-      <div class="consultation-wash"></div>
-      <div class="shell consultation-content">
-        <p class="eyebrow light">North Carolina and Beyond</p>
-        <h2>Every Project Begins with a Conversation.</h2>
-        <p>Tell us about your building, your plans, or your concern. We'll help you understand the next step.</p>
-        <a class="button primary warm" href="mailto:IndependentEnvSolutions@protonmail.com?subject=Consultation%20Request%20-%20Independent%20Environmental%20Solutions">Request a Consultation</a>
+   <section class="consultation-intro" id="consultation">
+  <img src="jordan-lake-lawrence-melosantos.jpg"
+       alt="Jordan Lake, North Carolina at sunset" />
+  <div class="consultation-wash"></div>
+
+  <div class="shell consultation-intro-content">
+    <p class="eyebrow light">North Carolina and Beyond</p>
+    <h2>Every Project Begins with a Conversation.</h2>
+    <p>
+      You don't need to know exactly what type of assessment you need.
+      Tell us what you're seeing, planning, or concerned about, and we'll
+      help determine an appropriate next step.
+    </p>
+  </div>
+
+  <p class="photo-credit">
+    Jordan Lake — Lawrence Melosantos / Unsplash
+  </p>
+</section>
+
+<section class="consultation-form-section">
+  <div class="shell consultation-layout">
+
+    <div class="consultation-form-wrap">
+      <p class="eyebrow">Request a Consultation</p>
+      <h2>Tell us about your project.</h2>
+      <p class="consultation-lead">
+        Share what you know. A few basic details are enough to begin the conversation.
+      </p>
+
+      <form
+        class="ies-consultation-form"
+        action="https://usebasin.com/f/a89a46c75120"
+        method="POST"
+        data-basin-form
+        data-basin-success-action="render">
+
+        <div class="form-grid two">
+          <div class="form-field">
+            <label for="name">Name <span>*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email <span>*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="form-grid two">
+          <div class="form-field">
+            <label for="phone">Phone <small>Optional</small></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+
+          <div class="form-field">
+            <label for="property-type">Property Type</label>
+            <select id="property-type" name="property_type">
+              <option value="">Select one</option>
+              <option value="Residential">Residential</option>
+              <option value="Commercial">Commercial</option>
+              <option value="Institutional">Institutional</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <fieldset class="form-field concern-field">
+          <legend>What brings you here?</legend>
+
+          <div class="choice-grid">
+            <label>
+              <input type="checkbox" name="project_interest[]" value="Renovation or project planning">
+              <span>Renovation or project planning</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="project_interest[]" value="Moisture or water intrusion">
+              <span>Moisture or water intrusion</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="project_interest[]" value="Mold concern">
+              <span>Mold concern</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="project_interest[]" value="Indoor air quality">
+              <span>Indoor air quality</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="project_interest[]" value="Asbestos or material question">
+              <span>Asbestos or material question</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="project_interest[]" value="Not sure yet">
+              <span>I'm not sure yet</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-field">
+          <label for="message">Tell us what's going on <span>*</span></label>
+          <textarea
+            id="message"
+            name="message"
+            rows="7"
+            placeholder="Tell us about the building, your plans, what you've observed, or what's concerning you."
+            required></textarea>
+        </div>
+
+        <fieldset class="form-field contact-method">
+          <legend>How would you prefer we follow up?</legend>
+
+          <div class="radio-row">
+            <label>
+              <input type="radio" name="preferred_contact" value="Email" checked>
+              <span>Email</span>
+            </label>
+
+            <label>
+              <input type="radio" name="preferred_contact" value="Phone">
+              <span>Phone</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <button class="button secondary form-submit" type="submit">
+          Request a Consultation
+        </button>
+
+        <p class="form-note">
+          Fields marked * are required. Information submitted through this form
+          will be used to respond to your inquiry.
+        </p>
+      </form>
+
+      <div class="w-form-done consultation-message" style="display:none;">
+        <h3>Thank you for reaching out.</h3>
+        <p>
+          Your request has been received. We'll review the information you've
+          provided and follow up to discuss the project and determine an
+          appropriate next step.
+        </p>
       </div>
-      <p class="photo-credit">Jordan Lake — Lawrence Melosantos / Unsplash</p>
-    </section>
+
+      <div class="w-form-fail consultation-message error" style="display:none;">
+        <h3>Something didn't go through.</h3>
+        <p>
+          Please try again, or email us directly at
+          IndependentEnvSolutions@protonmail.com.
+        </p>
+      </div>
+    </div>
+
+    <aside class="consultation-next">
+      <p class="eyebrow">What Happens Next?</p>
+
+      <div class="next-step">
+        <span>01</span>
+        <div>
+          <h3>We review your request.</h3>
+          <p>We'll look over the information you've provided and get familiar with the project.</p>
+        </div>
+      </div>
+
+      <div class="next-step">
+        <span>02</span>
+        <div>
+          <h3>We talk it through.</h3>
+          <p>We'll discuss the property, your concern, and what you're hoping to accomplish.</p>
+        </div>
+      </div>
+
+      <div class="next-step">
+        <span>03</span>
+        <div>
+          <h3>We determine the next step.</h3>
+          <p>If an assessment is appropriate, we'll explain the recommended scope and how to proceed.</p>
+        </div>
+      </div>
+
+      <div class="direct-contact">
+        <p>Prefer email?</p>
+        <a href="mailto:IndependentEnvSolutions@protonmail.com">
+          IndependentEnvSolutions@protonmail.com
+        </a>
+      </div>
+    </aside>
+
+  </div>
+</section>
   </main>
 
   <footer class="site-footer">
@@ -158,6 +341,10 @@
     </div>
     <div class="shell footer-bottom"><span>© 2026 Independent Environmental Solutions</span><details><summary>Photography Credits</summary><p>Grandfather Mountain — Wes Hicks / Unsplash · Charlotte — Daniel Weiss / Pexels · Jordan Lake — Lawrence Melosantos / Unsplash</p></details><span>Clear Information. Confident Decisions.</span></div>
   </footer>
+  <script src="https://js.usebasin.com/v2.11.1.min.js" defer></script>
+  <script src="script.js"></script>
+</body>
+</html>
   <script src="script.js"></script>
 </body>
 </html>
