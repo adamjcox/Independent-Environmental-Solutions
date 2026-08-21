@@ -343,3 +343,281 @@
     width:100%;
   }
 }
+/* About IES — v1.0 */
+
+.about-ies{
+  background:#fff;
+}
+
+.about-intro{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:5rem;
+  align-items:end;
+  margin-bottom:5rem;
+}
+
+.about-intro h2{
+  margin-bottom:0;
+}
+
+.about-intro-copy{
+  max-width:650px;
+}
+
+.about-intro-copy p:last-child{
+  color:var(--muted);
+}
+
+
+/* Experience Timeline */
+
+.experience-timeline{
+  position:relative;
+  max-width:900px;
+  margin:0 auto 6rem;
+  padding-left:3rem;
+}
+
+.experience-timeline::before{
+  content:"";
+  position:absolute;
+  left:12px;
+  top:10px;
+  bottom:10px;
+  width:1px;
+  background:var(--sage);
+  opacity:.55;
+}
+
+.timeline-item{
+  position:relative;
+  padding:0 0 3.5rem 2rem;
+}
+
+.timeline-item:last-child{
+  padding-bottom:0;
+}
+
+.timeline-marker{
+  position:absolute;
+  left:-3rem;
+  top:.2rem;
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  background:#fff;
+  border:1px solid var(--sage);
+}
+
+.timeline-marker::after{
+  content:"";
+  position:absolute;
+  inset:6px;
+  border-radius:50%;
+  background:var(--sage);
+}
+
+.timeline-item-current .timeline-marker{
+  background:var(--sage);
+}
+
+.timeline-item-current .timeline-marker::after{
+  background:#fff;
+}
+
+
+/* Small era marker before 2011 / Field Experience / etc. */
+
+.timeline-era{
+  display:flex;
+  align-items:center;
+  gap:.7rem;
+  margin:0 0 .55rem;
+  color:var(--sage);
+  font-size:.74rem;
+  font-weight:600;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.timeline-era::before{
+  content:"";
+  width:8px;
+  height:8px;
+  flex:0 0 8px;
+  border-radius:50%;
+  background:var(--sage);
+}
+
+.timeline-content h3{
+  font-size:2rem;
+  margin:.1rem 0 .35rem;
+}
+
+.timeline-detail{
+  margin:0 0 .65rem;
+  color:var(--navy);
+  font-weight:600;
+  font-size:.9rem;
+}
+
+.timeline-content>p:last-child{
+  max-width:680px;
+  margin-bottom:0;
+  color:var(--muted);
+}
+
+
+/* Person Behind IES */
+
+.about-person{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:5rem;
+  align-items:center;
+  padding:5rem 0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.about-portrait{
+  margin:0;
+}
+
+.about-photo-placeholder{
+  aspect-ratio:4/5;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(
+    145deg,
+    #eef1ed,
+    #dbe3dd
+  );
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+
+.about-photo-placeholder span{
+  color:var(--sage);
+  font-size:.72rem;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-weight:600;
+}
+
+.about-person-copy{
+  max-width:650px;
+}
+
+.about-person-copy h2{
+  margin-bottom:.35em;
+}
+
+.about-person-copy>p:not(.eyebrow):not(.lead){
+  color:var(--muted);
+}
+
+
+/* Signature */
+
+.about-signature{
+  max-width:760px;
+  margin:5rem auto 0;
+  text-align:center;
+}
+
+.about-signature blockquote{
+  margin:0 0 1.5rem;
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:clamp(2rem,4vw,3.4rem);
+  line-height:1.08;
+  color:var(--navy);
+}
+
+.signature-name{
+  margin:0;
+  color:var(--navy);
+  font-weight:600;
+}
+
+.signature-company{
+  margin:.15rem 0 1.8rem;
+  color:var(--muted);
+  font-size:.84rem;
+}
+
+.about-signature .button{
+  margin-top:.4rem;
+}
+
+
+/* About responsive */
+
+@media (max-width:960px){
+
+  .about-intro,
+  .about-person{
+    grid-template-columns:1fr;
+    gap:2.5rem;
+  }
+
+  .about-intro{
+    margin-bottom:4rem;
+  }
+
+  .about-person{
+    padding:4rem 0;
+  }
+
+  .about-portrait{
+    max-width:520px;
+  }
+}
+
+@media (max-width:650px){
+
+  .experience-timeline{
+    padding-left:2.5rem;
+    margin-bottom:4.5rem;
+  }
+
+  .experience-timeline::before{
+    left:9px;
+  }
+
+  .timeline-item{
+    padding-left:1.5rem;
+    padding-bottom:3rem;
+  }
+
+  .timeline-marker{
+    left:-2.5rem;
+    width:20px;
+    height:20px;
+  }
+
+  .timeline-marker::after{
+    inset:5px;
+  }
+
+  .timeline-content h3{
+    font-size:1.7rem;
+  }
+
+  .timeline-detail{
+    font-size:.84rem;
+  }
+
+  .about-photo-placeholder{
+    aspect-ratio:4/5;
+  }
+
+  .about-signature{
+    margin-top:4rem;
+  }
+
+  .about-signature .button{
+    width:100%;
+  }
+}
