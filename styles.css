@@ -484,7 +484,21 @@
 .about-portrait{
   margin:0;
 }
+.about-photo{
+  display:block;
+  width:100%;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  object-position:center;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
 
+.about-portrait figcaption{
+  margin-top:.65rem;
+  color:var(--muted);
+  font-size:.78rem;
+}
 .about-photo-placeholder{
   aspect-ratio:4/5;
   display:grid;
