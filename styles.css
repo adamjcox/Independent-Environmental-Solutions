@@ -384,7 +384,7 @@
   position:absolute;
   left:12px;
   top:10px;
-  bottom:10px;
+  height:calc(100% - 22px);
   width:1px;
   background:var(--sage);
   opacity:.55;
