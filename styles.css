@@ -1346,3 +1346,182 @@
     margin-top:3rem;
   }
 }
+/* =========================================================
+   Indoor Air Quality — Service-specific elements
+   ========================================================= */
+
+
+/* That's Still a Finding */
+
+.iaq-finding{
+  background:var(--paper);
+}
+
+.iaq-finding-inner{
+  max-width:900px;
+  text-align:center;
+}
+
+.iaq-finding-inner>h2{
+  margin-bottom:2rem;
+}
+
+.iaq-finding-copy{
+  max-width:680px;
+  margin:0 auto;
+  color:var(--muted);
+}
+
+.iaq-finding-copy p{
+  margin-bottom:1rem;
+}
+
+.iaq-finding-copy strong{
+  color:var(--navy);
+}
+
+.iaq-finding-statement{
+  max-width:850px;
+  margin:4.5rem auto 2rem;
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:clamp(2.4rem,5vw,4.6rem);
+  line-height:1.02;
+  font-weight:500;
+  color:var(--navy);
+}
+
+.iaq-finding-close{
+  max-width:650px;
+  margin:0 auto;
+  color:var(--muted);
+}
+
+
+/* Following the Pattern */
+
+.iaq-pattern-heading{
+  max-width:800px;
+  margin-bottom:3.5rem;
+}
+
+.iaq-pattern-heading>p:not(.eyebrow){
+  max-width:680px;
+  color:var(--muted);
+}
+
+.iaq-pattern-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.iaq-pattern-grid article{
+  position:relative;
+  padding:1.8rem 1.4rem 2rem;
+  border-right:1px solid var(--line);
+}
+
+.iaq-pattern-grid article:last-child{
+  border-right:0;
+}
+
+.iaq-pattern-grid article>span{
+  display:block;
+  margin-bottom:1.4rem;
+  color:var(--sage);
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.08em;
+}
+
+.iaq-pattern-label{
+  margin:0 0 .5rem;
+  color:var(--sage);
+  font-size:.72rem;
+  line-height:1.3;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
+
+.iaq-pattern-grid h3{
+  margin:0;
+  font-size:1.25rem;
+  line-height:1.18;
+}
+
+
+/* Important Distinction */
+
+.iaq-distinction-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:5rem;
+  align-items:start;
+}
+
+.iaq-distinction-copy{
+  max-width:650px;
+}
+
+.iaq-distinction-copy p{
+  color:var(--muted);
+}
+
+.iaq-distinction-copy strong{
+  color:var(--navy);
+}
+
+
+/* IAQ Tablet */
+
+@media (max-width:960px){
+
+  .iaq-pattern-grid{
+    grid-template-columns:repeat(2,1fr);
+    border-bottom:0;
+  }
+
+  .iaq-pattern-grid article{
+    border-bottom:1px solid var(--line);
+  }
+
+  .iaq-pattern-grid article:nth-child(even){
+    border-right:0;
+  }
+
+  .iaq-pattern-grid article:last-child{
+    border-right:1px solid var(--line);
+  }
+
+  .iaq-distinction-grid{
+    grid-template-columns:1fr;
+    gap:2rem;
+  }
+}
+
+
+/* IAQ Mobile */
+
+@media (max-width:650px){
+
+  .iaq-finding-statement{
+    margin-top:3rem;
+  }
+
+  .iaq-pattern-grid{
+    grid-template-columns:1fr;
+  }
+
+  .iaq-pattern-grid article,
+  .iaq-pattern-grid article:nth-child(even),
+  .iaq-pattern-grid article:last-child{
+    border-right:0;
+    padding:1.4rem 0;
+  }
+
+  .iaq-pattern-grid article>span{
+    margin-bottom:.75rem;
+  }
+}
