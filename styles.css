@@ -1847,3 +1847,13 @@
   .knowledge-service-bridge{padding:4.5rem 0}
   .knowledge-service-bridge .button{width:100%}
 }
+
+
+/* IES Knowledge Library — Article 02 support */
+.knowledge-process.five{grid-template-columns:repeat(5,1fr)}
+@media (max-width:650px){
+  .knowledge-process.five{grid-template-columns:1fr}
+  .knowledge-process.five span{border-bottom:1px solid var(--line)}
+  .knowledge-process.five span:last-child{border-bottom:0}
+  .knowledge-process.five span:not(:last-child)::after{content:"↓";right:auto;left:50%;bottom:-.72rem;top:auto;transform:translateX(-50%);background:#fff;padding:0 .25rem}
+}
