@@ -1125,6 +1125,10 @@
 .mobile-story-link{
   display:none;
 }
+
+.mobile-service-actions{
+  display:none;
+}
 /* Mobile */
 
 @media (max-width:650px){
@@ -1163,7 +1167,7 @@
     border-left:0;
   }
 
-  .material-index article{
+   .material-index article{
     grid-template-columns:38px 1fr;
   }
 
@@ -1200,13 +1204,22 @@
     flex-direction:column;
     gap:1.5rem;
   }
-  .desktop-story-link{
-  display:none;
+ .desktop-story-link{
+    display:none;
 }
 
-.mobile-story-link{
-  display:inline-block;
-  margin-top:1rem;
+  .mobile-story-link{
+    display:inline-block;
+    margin-top:1rem;
+}
+  
+  .desktop-service-actions{
+    display:none;
+}
+
+  .mobile-service-actions{
+    display:flex;
+}
 }
 /* =========================================================
    Mold Investigations — Service-specific elements
